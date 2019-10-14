@@ -1,0 +1,37 @@
+{
+  "name": "adoptame",
+  "version": "1.0.0",
+  "description": "pet's adoption site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dependencies": "uglifyjs-folder ./src/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
+    "copy-assets": "cpx ./src/index.html ./dist/ && cpx ./src/img/** ./dist/img && cpx ./src/fonts/** ./dist/fonts && cpx ./src/css/** ./dist/css",
+    "start-dev": "webpack-dev-server --content-base dist/  --open",
+    "build-dev": "npm run build-dependencies && npm run copy-assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suiz0/adoptame.git"
+  },
+  "keywords": [
+    "site",
+    "adopt",
+    "pet",
+    "web"
+  ],
+  "author": "cesar iduarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suiz0/adoptame/issues"
+  },
+  "homepage": "https://github.com/suiz0/adoptame#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "uglify-js": "^3.6.1",
+    "uglifyjs-folder": "^1.5.1",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
