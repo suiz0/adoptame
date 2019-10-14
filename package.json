@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dependencies": "uglifyjs-folder ./src/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
     "copy:assets": "cpx ./src/**/*.{html,eot,svg,woff,woff2,css,ttf,jpg,png} ./dist/",
-    "start:dev": "webpack-dev-server --content-base dist/  --open",
+    "start:dev": "webpack-dev-server --content-base dist/  --open --history-api-fallback",
     "build:dev": "npm run build:dependencies && npm run copy:assets"
   },
   "repository": {
