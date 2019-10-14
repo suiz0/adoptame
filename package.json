@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dependencies": "uglifyjs-folder ./src/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
-    "copy-assets": "cpx ./src/index.html ./dist/ && cpx ./src/img/** ./dist/img && cpx ./src/fonts/** ./dist/fonts && cpx ./src/css/** ./dist/css",
-    "start-dev": "webpack-dev-server --content-base dist/  --open",
-    "build-dev": "npm run build-dependencies && npm run copy-assets"
+    "build:dependencies": "uglifyjs-folder ./src/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
+    "copy:assets": "cpx ./src/**/*.{html,eot,svg,woff,woff2,css,ttf,jpg,png} ./dist/",
+    "start:dev": "webpack-dev-server --content-base dist/  --open",
+    "build:dev": "npm run build:dependencies && npm run copy:assets"
   },
   "repository": {
     "type": "git",
