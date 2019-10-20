@@ -8,7 +8,8 @@
     "build:dependencies": "uglifyjs-folder ./src/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
     "copy:assets": "cpx ./src/**/*.{html,eot,svg,woff,woff2,css,ttf,jpg,png} ./dist/",
     "start:dev": "webpack-dev-server --content-base dist/  --open --history-api-fallback",
-    "build:dev": "npm run build:dependencies && npm run copy:assets"
+    "build:dev": "npm run build:dependencies && npm run copy:assets && npm run compile:dev",
+    "compile:dev": "webpack ./src/index.js --mode=development"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,8 @@
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
   }
 }
