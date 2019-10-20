@@ -30,214 +30,216 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <header id="header" id="home">
-        <div class="container main-menu">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+        <div id="app">
+            <header id="header" id="home">
+                <div class="container main-menu">
+                    <div class="row align-items-center justify-content-between d-flex">
+                        <div id="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                        </div>
+                        <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active"><a href="index.html">Inicio</a></li>
+                            <li><a href="#about">Nosotros</a></li>
+                            <li><a href="#dogs">Perros</a></li>						          
+                            <li><a href="#concact">Contacto</a></li>	              
+                        </ul>
+                        </nav><!-- #nav-menu-container -->		    		
+                    </div>
                 </div>
-                <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#dogs">Perros</a></li>						          
-                    <li><a href="#concact">Contacto</a></li>	              
-                </ul>
-                </nav><!-- #nav-menu-container -->		    		
-            </div>
-        </div>
-        </header><!-- #header -->
+            </header><!-- #header -->
 
-        <!-- start banner Area -->
-        <section class="banner-area relative" id="home">
-            <div class="container">
-                <div class="overlay overlay-bg"></div>
-                <div class="row fullscreen d-flex align-items-center justify-content-start">
-                    <div class="banner-content col-lg-8 col-md-12">
-                        <h1 class="text-uppercase">
-                            Adopta. <br>
-                            Y cambia sus vidas
-                        </h1>
-                        <p class="text-white sub-head">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
-                            or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                        </p>
-                        <a href="#" class="primary-btn header-btn text-uppercase">Encuentra una mascota para ti</a>
-                    </div>											
+            <!-- start banner Area -->
+            <home-banner id="home"></home-banner>
+            <!--<section class="banner-area relative" id="home">
+                <div class="container">
+                    <div class="overlay overlay-bg"></div>
+                    <div class="row fullscreen d-flex align-items-center justify-content-start">
+                        <div class="banner-content col-lg-8 col-md-12">
+                            <h1 class="text-uppercase">
+                                Adopta. <br>
+                                Y cambia sus vidas
+                            </h1>
+                            <p class="text-white sub-head">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
+                                or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            </p>
+                            <a href="#" class="primary-btn header-btn text-uppercase">Encuentra una mascota para ti</a>
+                        </div>											
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- End banner Area -->
+            </section>-->
+            <!-- End banner Area -->
 
-        <!-- Start image-carusel Area -->
-        <section class="image-carusel-area">
-            <div class="container">
-                <div class="row">
-                    <div class="active-image-carusel">
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c1.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c2.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c3.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c4.jpg" alt="">
-                        </div>	
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c1.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c2.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c3.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c4.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c1.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c2.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c3.jpg" alt="">
-                        </div>
-                        <div class="single-image-carusel">
-                            <img class="img-fluid" src="img/c4.jpg" alt="">
-                        </div>															
-                    </div>
-                </div>
-            </div>	
-        </section>
-        <!-- End image-carusel Area -->
-        <!-- Start process Area -->
-        <section class="process-area section-gap">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="menu-content pb-60 col-lg-8">
-                        <div class="title text-center">
-                            <h1 class="mb-10">Proceso</h1>
-                            <p>Un miembro nuevo en la familia.</p>
+            <!-- Start image-carusel Area -->
+            <section class="image-carusel-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="active-image-carusel">
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c1.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c2.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c3.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c4.jpg" alt="">
+                            </div>	
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c1.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c2.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c3.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c4.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c1.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c2.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c3.jpg" alt="">
+                            </div>
+                            <div class="single-image-carusel">
+                                <img class="img-fluid" src="img/c4.jpg" alt="">
+                            </div>															
                         </div>
                     </div>
-                </div>					
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process">
-                            <span class="lnr lnr-thumbs-up"></span>
-                            <a href="#">
-                                <h4>
-                                    Úbica a la mascota
-                                </h4>
-                            </a>
-                            <p>
-                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process">
-                            <span class="lnr lnr-user"></span>
-                            <a href="#">
-                                <h4>
-                                    Llena el Formulario
-                                </h4>
-                            </a>
-                            <p>
-                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process">
-                            <span class="lnr lnr-magic-wand"></span>
-                            <a href="#">
-                                <h4>
-                                    Llevalo a casa
-                                </h4>
-                            </a>
-                            <p>
-                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
-                            </p>
-                        </div>
-                    </div>																		
-                </div>
-            </div>	
-        </section>
-		<!-- End process Area -->
-        
-        <!-- start footer Area -->		
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row pt-120 pb-80">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-footer-widget">
-                            <h6>Nosotros</h6>
-                            <p>
-                                Few would argue that, despite the advanc ements off eminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-footer-widget">
-                            <h6>Enlaces de interes</h6>
-                            <div class="row">
-                                <ul class="col footer-nav">
-                                    <li><a href="#">Inicio</a></li>
-                                </ul>								
+                </div>	
+            </section>
+            <!-- End image-carusel Area -->
+            <!-- Start process Area -->
+            <section class="process-area section-gap">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60 col-lg-8">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Proceso</h1>
+                                <p>Un miembro nuevo en la familia.</p>
                             </div>
                         </div>
-                    </div>						
-                    <div class="col-lg-4  col-md-6">
-                        <div class="single-footer-widget mail-chimp">
-                            <h6 class="mb-20">Contactanos</h6>
-                            <ul class="list-contact">
-                                <li class="flex-row d-flex">
-                                    <div class="icon">
-                                        <span class="lnr lnr-home"></span>
-                                    </div>
-                                    <div class="detail">
-                                        <h4>Binghamton, New York</h4>
-                                        <p>
-                                            4343 Hinkle Deegan Lake Road
-                                        </p>
-                                    </div>	
-                                </li>
-                                <li class="flex-row d-flex">
-                                    <div class="icon">
-                                        <span class="lnr lnr-phone-handset"></span>
-                                    </div>
-                                    <div class="detail">
-                                        <h4>00 (953) 9865 562</h4>
-                                        <p>
-                                            Mon to Fri 9am to 6 pm
-                                        </p>
-                                    </div>	
-                                </li>
-                                <li class="flex-row d-flex">
-                                    <div class="icon">
-                                        <span class="lnr lnr-envelope"></span>
-                                    </div>
-                                    <div class="detail">
-                                        <h4>support@colorlib.com</h4>
-                                        <p>
-                                            Send us your query anytime!
-                                        </p>
-                                    </div>	
-                                </li>																		
-                            </ul>
+                    </div>					
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-thumbs-up"></span>
+                                <a href="#">
+                                    <h4>
+                                        Úbica a la mascota
+                                    </h4>
+                                </a>
+                                <p>
+                                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
                         </div>
-                    </div>						
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-user"></span>
+                                <a href="#">
+                                    <h4>
+                                        Llena el Formulario
+                                    </h4>
+                                </a>
+                                <p>
+                                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-magic-wand"></span>
+                                <a href="#">
+                                    <h4>
+                                        Llevalo a casa
+                                    </h4>
+                                </a>
+                                <p>
+                                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>																		
+                    </div>
+                </div>	
+            </section>
+            <!-- End process Area -->
+            
+            <!-- start footer Area -->		
+            <footer class="footer-area">
+                <div class="container">
+                    <div class="row pt-120 pb-80">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-widget">
+                                <h6>Nosotros</h6>
+                                <p>
+                                    Few would argue that, despite the advanc ements off eminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-widget">
+                                <h6>Enlaces de interes</h6>
+                                <div class="row">
+                                    <ul class="col footer-nav">
+                                        <li><a href="#">Inicio</a></li>
+                                    </ul>								
+                                </div>
+                            </div>
+                        </div>						
+                        <div class="col-lg-4  col-md-6">
+                            <div class="single-footer-widget mail-chimp">
+                                <h6 class="mb-20">Contactanos</h6>
+                                <ul class="list-contact">
+                                    <li class="flex-row d-flex">
+                                        <div class="icon">
+                                            <span class="lnr lnr-home"></span>
+                                        </div>
+                                        <div class="detail">
+                                            <h4>Binghamton, New York</h4>
+                                            <p>
+                                                4343 Hinkle Deegan Lake Road
+                                            </p>
+                                        </div>	
+                                    </li>
+                                    <li class="flex-row d-flex">
+                                        <div class="icon">
+                                            <span class="lnr lnr-phone-handset"></span>
+                                        </div>
+                                        <div class="detail">
+                                            <h4>00 (953) 9865 562</h4>
+                                            <p>
+                                                Mon to Fri 9am to 6 pm
+                                            </p>
+                                        </div>	
+                                    </li>
+                                    <li class="flex-row d-flex">
+                                        <div class="icon">
+                                            <span class="lnr lnr-envelope"></span>
+                                        </div>
+                                        <div class="detail">
+                                            <h4>support@colorlib.com</h4>
+                                            <p>
+                                                Send us your query anytime!
+                                            </p>
+                                        </div>	
+                                    </li>																		
+                                </ul>
+                            </div>
+                        </div>						
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <!-- End footer Area -->	
-
+            </footer>
+            <!-- End footer Area -->
+        </div>
        <!-- <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>			
           <script src="js/easing.min.js"></script>			
