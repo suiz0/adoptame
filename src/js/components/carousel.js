@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-Vue.component('carousel', {
+var carousel = {
     template: `
     <section class="image-carusel-area">
     <div class="container">
@@ -17,4 +15,6 @@ Vue.component('carousel', {
     props: {
         items: {type: Array, default: () => {return [];}}
     }
-});
+};
+
+exports.default = carousel;
