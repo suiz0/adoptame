@@ -1,5 +1,6 @@
 import Vue from 'vue';
-var banner = require('./js/components/banner');
+require('./js/components/banner');
+require('./js/components/carousel.js');
 
 
 var app = new Vue({
