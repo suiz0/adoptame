@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clear":"rimraf dist", 
+    "clear": "rimraf dist",
     "compact:js": "uglifyjs-folder ./src/static/js/vendor -o ./dist/js/dependencies.js -p jquery*.js,bootstrap*.js,../*.js",
-    "copy:assets": "cpx ./src/static/**/*.{html,eot,svg,woff,woff2,css,ttf,jpg,png} ./dist/ && cpx ./src/index.html ./dist/",
+    "copy:assets": "cpx './src/static/**/*.{html,eot,svg,woff,woff2,css,ttf,jpg,png}' ./dist/ && cpx './src/index.html' ./dist/",
     "start:dev": "webpack-dev-server --content-base dist/  --open --history-api-fallback",
     "build:dev": "npm run clear && npm run compact:js && npm run copy:assets && npm run compile:dev",
     "compile:dev": "webpack ./src/index.js --mode=development"
@@ -38,6 +38,7 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
   }
 }
