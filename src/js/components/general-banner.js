@@ -5,9 +5,9 @@ var generalBanner = {
         <div class="row d-flex align-items-center justify-content-center">
             <div class="about-content col-lg-12">
                 <h1 class="text-white">
-                    {{sectionText}}		
+                    {{sectionText}}
                 </h1>	
-                <p class="text-white link-nav"><a href="#home">Inicio</a><span class="lnr lnr-arrow-right"></span>  <a href="dogs.html"> dogs</a></p>
+                <p class="text-white link-nav"><router-link to="/">Inicio</router-link><span class="lnr lnr-arrow-right"></span>  {{sectionText}}</p>
             </div>	
         </div>
     </div>
