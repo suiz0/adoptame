@@ -19,6 +19,9 @@ var homeBanner = {
     </banner>`,
     props: {
         id: {type:String}
+    },
+    mounted: function() {
+        this.$utils.applyViewDimmensions();
     }
 };
 

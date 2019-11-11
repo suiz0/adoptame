@@ -8,7 +8,7 @@ var generalBanner = {
                     {{sectionText}}
                 </h1>	
                 <p class="text-white link-nav"><router-link to="/">Inicio</router-link><span class="lnr lnr-arrow-right"></span>  {{sectionText}}</p>
-            </div>	
+            </div>
         </div>
     </div>
     </banner>`,

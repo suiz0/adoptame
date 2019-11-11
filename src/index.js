@@ -25,6 +25,26 @@ var routes = [
 
 var router = new VueRouter({routes});
 
+Vue.prototype.$utils = 
+{
+    $: function(ele) {
+        return document.querySelector(ele);
+    },
+    $$: function(ele) {
+        return document.querySelectorAll(ele);
+    },
+    hasScrollbars: function() {
+        if (typeof window.innerWidth === 'number')
+            return window.innerWidth > document.documentElement.clientWidth;
+    },
+    applyViewDimmensions: function() {
+        var window_width = document.body.clientWidth,
+        window_height = window.innerHeight;
+
+        this.$('.fullscreen').style.height = window_height + 'px';
+    }
+};
+
 var app = new Vue({
     router,
     el: "#app"

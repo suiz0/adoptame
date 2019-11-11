@@ -7,7 +7,6 @@ $(document).ready(function() {
         header_height_static = $(".site-header.static").outerHeight(),
         fitscreen = window_height - header_height;
 
-    $(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
     if (document.getElementById("default-select")) {
@@ -178,29 +177,6 @@ $(document).ready(function() {
             961: {
                 items: 3,
             }
-        }
-    });
-
-    $('.active-image-carusel').owlCarousel({
-        items: 4,
-        loop: true,
-        dots: true,
-        autoplay: true,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            900: {
-                items: 4,
-            }
-
         }
     });
 

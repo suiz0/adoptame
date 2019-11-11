@@ -14,7 +14,31 @@ var carousel = {
     `,
     props: {
         items: {type: Array, default: () => {return [];}}
+    },
+    mounted: function() {
+        $(this.$el).find('.active-image-carusel').owlCarousel({
+            items: 4,
+            loop: true,
+            dots: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                900: {
+                    items: 4,
+                }
+    
+            }
+        });
     }
 };
 
-exports.default = carousel;
+export default carousel;
